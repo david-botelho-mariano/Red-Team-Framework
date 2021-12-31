@@ -2,7 +2,7 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id viverra. Duis varius elit elit, eu interdum arcu auctor id. Pellentesque pellentesque molestie justo ac pellentesque. Donec mattis massa quis tortor blandit, ac iaculis massa lacinia. Vestibulum mattis gravida consectetur. Donec tristique magna ut scelerisque tincidunt. Aliquam vel mauris nisl. Morbi et laoreet dolor. Fusce eu lectus pellentesque libero facilisis tincidunt. Aliquam magna risus, aliquam non mattis in, vehicula in mauris. Mauris hendrerit est in malesuada imperdiet. Integer maximus felis ac fermentum mattis.
 
-# TO-DO
+# Tools implemented
 
 - [x] Add elegant template
   - https://adminlte.io/
@@ -10,11 +10,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - https://coreui.io/?affChecked=1#compare
 
 - Discovery and reconnaissance
-  - [ ] amass
-  - [ ] shodan (API key)
-  - [ ] firce 
-  - [ ] chaos (API key)
-  - [ ] https://github.com/lc/gau#installation
+  - [ ] Amass (https://github.com/OWASP/Amass)
+  - [ ] Shodan (https://www.shodan.io)
+  - [ ] Chaos (https://chaos.projectdiscovery.io)
+  - [ ] Gau https://github.com/lc/gau#installation
 
 
 - Scanning and exploit
@@ -25,4 +24,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - [ ] Acunetix (https://www.acunetix.com/blog/docs/managing-scans-python-acunetix-api)
   - [ ] Joomscan (https://github.com/OWASP/joomscan)
   - [ ] Wpscan (https://github.com/wpscanteam/wpscan)
-  - [ ] Find endpoints using JS files5
+  - [ ] Find endpoints using JS files
