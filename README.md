@@ -13,12 +13,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - [ ] Amass (https://github.com/OWASP/Amass)
   - [ ] Shodan (https://www.shodan.io)
   - [ ] Chaos (https://chaos.projectdiscovery.io)
-  - [ ] Gau https://github.com/lc/gau#installation
+  - [ ] Gau (https://github.com/lc/gau)
 
 
 - Scanning and exploit
   - [ ] Metasploit (https://docs.rapid7.com/metasploit/pro-feature-api)
-  - [ ] Burp
+  - [ ] Burp Suite (https://portswigger.net/blog/burps-new-rest-api)
   - [ ] Nettacker (https://github.com/OWASP/Nettacker)
   - [ ] Brutespray (https://github.com/x90skysn3k/brutespray)
   - [ ] Acunetix (https://www.acunetix.com/blog/docs/managing-scans-python-acunetix-api)
