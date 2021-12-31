@@ -10,19 +10,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - https://coreui.io/?affChecked=1#compare
 
 - Discovery and reconnaissance
-  - [] amass
-  - [] shodan (API key)
-  - [] firce 
-  - [] chaos (API key)
+  - [ ] amass
+  - [ ] shodan (API key)
+  - [ ] firce 
+  - [ ] chaos (API key)
+  - [ ] https://github.com/lc/gau#installation
 
 
-- [x] Scanning 
-  - Metasploit
-  - Burp
-  - 
-  
-- [x] Exploit 
-  - https://github.com/OWASP/Nettacker
-  - https://github.com/x90skysn3k/brutespray
-  - 
-
+- Scanning and exploit
+  - [ ] Metasploit (https://docs.rapid7.com/metasploit/pro-feature-api)
+  - [ ] Burp
+  - [ ] Nettacker (https://github.com/OWASP/Nettacker)
+  - [ ] Brutespray (https://github.com/x90skysn3k/brutespray)
+  - [ ] Acunetix (https://www.acunetix.com/blog/docs/managing-scans-python-acunetix-api)
+  - [ ] Joomscan (https://github.com/OWASP/joomscan)
+  - [ ] Wpscan (https://github.com/wpscanteam/wpscan)
+  - [ ] Find endpoints using JS files5
