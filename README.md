@@ -1,4 +1,4 @@
-# Red-Team-Framework
+# Red Team Framework
 
 # Installation
 
@@ -6,7 +6,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 # TO-DO
 
-- [x] Add template
+- [x] Add elegant template
   - https://adminlte.io/
   - https://startbootstrap.com/theme/sb-admin-2
   - https://coreui.io/?affChecked=1#compare
