@@ -6,8 +6,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 # TO-DO
 
+- [x] Add template
+  - https://adminlte.io/
+
 - Add template
-  - [x] #739  
+  - [x] https://adminlte.io/
 
 - [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
