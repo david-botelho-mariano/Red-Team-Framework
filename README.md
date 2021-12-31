@@ -8,12 +8,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 - [x] Add template
   - https://adminlte.io/
-
-- Add template
-  - [x] https://adminlte.io/
-
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-
-
+  - https://startbootstrap.com/theme/sb-admin-2
+  - https://coreui.io/?affChecked=1#compare
