@@ -5,7 +5,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 # Tools implemented
 
   - [ ] Amass (https://github.com/OWASP/Amass)
-  - [ ] Nmap
+  - [ ] Nmap (https://nmap.org)
   - [ ] Screenshot websites
 
 # TO-DO
