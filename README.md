@@ -15,6 +15,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - [X] Chaos (https://chaos.projectdiscovery.io)
   - [ ] Gau (https://github.com/lc/gau)
   - [ ] Nmap
+  - [ ] Screenshot websites
 
 
 - Scanning and exploit
