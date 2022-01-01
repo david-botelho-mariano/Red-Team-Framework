@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 import subprocess
-
 import os
 #os.path.join(os.path.dirname(__file__), 'static')
 
@@ -20,6 +19,12 @@ def index():
 def config():
 
     return render_template("config.html")    
+
+@app.route("/api/set_env_var/<key>/<value>")
+def api_set_env_var(key, value):
+
+    os.environ[key] = value
+    return os.environ.get(key)
 
 @app.route("/programs/amass")    
 def amass():
