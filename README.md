@@ -12,7 +12,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 # TO-DO
 
-- Scanning and exploit
   - [ ] Shodan (https://www.shodan.io)
   - [ ] Chaos (https://chaos.projectdiscovery.io)
   - [ ] Gau (https://github.com/lc/gau)
@@ -24,7 +23,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - [ ] Joomscan (https://github.com/OWASP/joomscan)
   - [ ] Wpscan (https://github.com/wpscanteam/wpscan)
   - [ ] Find endpoints using JS files
-  - [ ] Add elegant template
-        - https://adminlte.io/
-        - https://startbootstrap.com/theme/sb-admin-2
-        - https://coreui.io/?affChecked=1#compare
+
+- [ ] Add elegant template
+  - https://adminlte.io/
+  - https://startbootstrap.com/theme/sb-admin-2
+  - https://coreui.io/?affChecked=1#compare
