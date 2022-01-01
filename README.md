@@ -4,10 +4,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 # Tools implemented
 
-- [ ] Add elegant template
-  - https://adminlte.io/
-  - https://startbootstrap.com/theme/sb-admin-2
-  - https://coreui.io/?affChecked=1#compare
 
 - Discovery and reconnaissance
   - [ ] Amass (https://github.com/OWASP/Amass)
@@ -17,6 +13,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - [ ] Nmap
   - [ ] Screenshot websites
 
+#TO-DO
+
+- [ ] Add elegant template
+  - https://adminlte.io/
+  - https://startbootstrap.com/theme/sb-admin-2
+  - https://coreui.io/?affChecked=1#compare
 
 - Scanning and exploit
   - [ ] Metasploit (https://docs.rapid7.com/metasploit/pro-feature-api)
