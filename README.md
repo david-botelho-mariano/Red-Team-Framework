@@ -11,9 +11,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 - Discovery and reconnaissance
   - [ ] Amass (https://github.com/OWASP/Amass)
-  - [ ] Shodan (https://www.shodan.io)
-  - [ ] Chaos (https://chaos.projectdiscovery.io)
+  - [X] Shodan (https://www.shodan.io)
+  - [X] Chaos (https://chaos.projectdiscovery.io)
   - [ ] Gau (https://github.com/lc/gau)
+  - [ ] Nmap
 
 
 - Scanning and exploit
