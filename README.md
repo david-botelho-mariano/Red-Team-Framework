@@ -4,7 +4,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 # Tools implemented
 
-
 - Discovery and reconnaissance
   - [ ] Amass (https://github.com/OWASP/Amass)
   - [X] Shodan (https://www.shodan.io)
@@ -13,7 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - [ ] Nmap
   - [ ] Screenshot websites
 
-#TO-DO
+# TO-DO
 
 - [ ] Add elegant template
   - https://adminlte.io/
