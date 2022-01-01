@@ -8,7 +8,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - [ ] Amass (https://github.com/OWASP/Amass)
   - [X] Shodan (https://www.shodan.io)
   - [X] Chaos (https://chaos.projectdiscovery.io)
-  - [ ] Gau (https://github.com/lc/gau)
   - [ ] Nmap
   - [ ] Screenshot websites
 
@@ -20,6 +19,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
   - https://coreui.io/?affChecked=1#compare
 
 - Scanning and exploit
+  - [ ] Gau (https://github.com/lc/gau)
   - [ ] Metasploit (https://docs.rapid7.com/metasploit/pro-feature-api)
   - [ ] Burp Suite (https://portswigger.net/blog/burps-new-rest-api)
   - [ ] Nettacker (https://github.com/OWASP/Nettacker)
