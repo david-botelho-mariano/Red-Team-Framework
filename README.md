@@ -4,9 +4,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet a ex id v
 
 # Tools implemented
 
-- Discovery and reconnaissance
   - [ ] Amass (https://github.com/OWASP/Amass)
-
   - [ ] Nmap
   - [ ] Screenshot websites
 
