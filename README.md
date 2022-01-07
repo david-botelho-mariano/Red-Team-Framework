@@ -10,7 +10,7 @@ Grapical user interface to automate the process of penetration tests, still unde
 
 # Demonstration
 
-![image](https://user-images.githubusercontent.com/48680041/148620255-42570d1b-c24c-4999-91f3-11199e3dd8bf.png)
+![image](https://user-images.githubusercontent.com/48680041/148620276-c4f8a0e7-4a27-47ca-9172-7be56f4de374.png)
 
 # TO-DO
 
