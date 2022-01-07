@@ -15,6 +15,11 @@ def index():
 
     return render_template("index.html")
 
+@app.route("/target/<website_url>/")
+def website_url(website_url):
+
+    return render_template("index.html")    
+
 @app.route("/config")
 def config():
 

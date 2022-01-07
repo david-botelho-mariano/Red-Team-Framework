@@ -1,0 +1,38 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+<script>
+    function Redirect() {
+            
+
+    }    
+</script>
+
+<h1>Reconnaissance</h1>
+
+<p></p>
+  
+<label>Domain:</label>
+<input id="domain" class="form-control" type="text" placeholder="example.com">
+
+<p></p>
+
+<button type="button" class="btn btn-dark" onclick="Redirect()">Start reconnaissance</button>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Amass</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Nmap</label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Website screnshot</label>
+  </div>
+
+{% endblock %}
