@@ -2,6 +2,15 @@
 
 Grapical user interface to automate the process of penetration tests, still under development.
 
+# Getting started 
+
+1) Instale as bibliotecas do python:
+- Flask
+-
+
+2) Start the framework
+´python app.py´
+
 # Tools implemented
 
   - [ ] Amass (https://github.com/OWASP/Amass)
