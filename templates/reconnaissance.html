@@ -3,36 +3,59 @@
 {% block content %}
 
 <script>
-    function Redirect() {
-            
 
-    }    
+  var path = window.location.pathname;
+  var path_array = path.split('/');
+  var domain = path_array[2];
+
+  $(document).ready(function(){
+    Amass();
+  });
+  
+  function Amass() {
+
+    document.getElementById("amass").style.width="50%";
+
+    $.ajax({
+      url: '/programs/amass?target=' + domain,
+      type: 'GET',
+
+      success: function(data, status) {
+        document.getElementById("amass").style.width="100%";
+      },
+
+      error: function(data, status) {
+        //console.log(data);
+      }
+    });            
+
+  }
+
 </script>
 
 <h1>Reconnaissance</h1>
 
 <p></p>
   
-<label>Domain:</label>
-<input id="domain" class="form-control" type="text" placeholder="example.com">
+<div>Amass:</div>
 
-<p></p>
+<div class="progress">
+  <div id="amass" class="progress-bar" role="progressbar" style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 
-<button type="button" class="btn btn-dark" onclick="Redirect()">Start reconnaissance</button>
+<div>Nmap:</div>
 
-  <div class="form-check form-switch">
-    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
-    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Amass</label>
-  </div>
+<div class="progress">
+  <div id="nmap" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 
-  <div class="form-check form-switch">
-    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
-    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Nmap</label>
-  </div>
+<div>Screenshot:</div>
 
-  <div class="form-check form-switch">
-    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
-    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Website screnshot</label>
-  </div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+
 
 {% endblock %}

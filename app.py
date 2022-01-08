@@ -1,44 +1,46 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import subprocess
 import os
-#os.path.join(os.path.dirname(__file__), 'static')
 
 base_folder = os.getcwd() 
 app = Flask(__name__)
 
-def save_file(file):
-    with open(base_folder + "/" + file.filename, 'wb') as f:
-        f.write(file.read())
+def save_file(filename, content):
+    with open(filename, 'w') as file:
+        file.write(content)
 
 @app.route("/")
 def index():
 
     return render_template("index.html")
 
-@app.route("/target/<website_url>/")
+@app.route("/reconnaissance/<website_url>/")
 def website_url(website_url):
 
-    return render_template("index.html")    
-
-@app.route("/config")
-def config():
-
-    return render_template("config.html")    
-
-@app.route("/api/set_env_var/<key>/<value>")
-def api_set_env_var(key, value):
-
-    os.environ[key] = value
-    return os.environ.get(key)
+    return render_template("reconnaissance.html")    
 
 @app.route("/programs/amass")    
 def amass():
 
-    args = [base_folder + '/tools/amass.exe', 'enum', '-active', '-d', 'tce.to.gov.br']
+    target = request.args.get("target")
+    args = [base_folder + '/tools/amass/amass.exe', 'enum', '-active', '-d', target]
     print(args)
 
     amass_result = subprocess.check_output(args)
     print(amass_result)
+
+    try:
+        os.mkdir(base_folder + "/" + target)
+
+    except Exception as error:
+        pass
+
+    finally:
+        amass_filename = base_folder + "/" + target + "/amass.txt"
+        print(amass_filename)
+
+        save_file(amass_filename, amass_result)
+    
     return str(amass_result)
 
 if __name__ == '__main__':    
