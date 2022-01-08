@@ -9,7 +9,7 @@ Grapical user interface to automate the process of penetration tests, still unde
 -
 
 2) Start the framework
-´python app.py´
+`python app.py`
 
 # Tools implemented
 
