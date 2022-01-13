@@ -1,7 +1,15 @@
+#webserver
 from flask import Flask, render_template, request
 import subprocess
 import os
+
+#nmap
 from xml.dom import minidom
+
+#screenshotpy
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import time
 
 base_folder = os.getcwd() 
 app = Flask(__name__)
@@ -10,17 +18,20 @@ def save_file(filename, content):
     with open(filename, 'w') as file:
         file.write(content)
 
+##http://127.0.0.1:5000/
 @app.route("/")
 def index():
 
     return render_template("index.html")
 
+#http://127.0.0.1:5000/reconnaissance/tj.to.gov.br/
 @app.route("/reconnaissance/<website_url>/")
 def website_url(website_url):
 
     return render_template("reconnaissance.html")    
 
-@app.route("/programs/amass")    
+#http://127.0.0.1:5000/programs/amass?target=www.google.com
+@app.route("/programs/amass")
 def amass():
 
     target = request.args.get("target")
@@ -31,32 +42,27 @@ def amass():
     print(amass_result)
 
     try:
-        os.mkdir(base_folder + "/targets/" + target)
+        os.mkdir(base_folder + "/static/targets/" + target)
 
     except Exception as error:
         pass
 
     finally:
-        amass_filename = base_folder + "/targets/" + target + "/amass.txt"
+        amass_filename = base_folder + "/static/targets/" + target + "/amass.txt"
         print(amass_filename)
 
         save_file(amass_filename, amass_result)
     
     return str(amass_result)
 
+#http://127.0.0.1:5000/programs/nmap?target=www.google.com
 @app.route("/programs/nmap")    
 def nmap():
-
-    try:
-        os.mkdir(base_folder + "/targets/" + target)
-
-    except Exception as error:
-        pass
-
+    
     target = request.args.get("target")
-    subdomains_path = base_folder + "/targets/" + target + "/amass.txt"
-    output_path = base_folder + "/targets/" + target + "/nmap.xml"
-    nmap_filename_clean = base_folder + "/targets/" + target + "/nmap_clean.txt"
+    subdomains_path = base_folder + "/static/targets/" + target + "/amass.txt"
+    output_path = base_folder + "/static/targets/" + target + "/nmap.xml"
+    nmap_filename_clean = base_folder + "/static/targets/" + target + "/nmap_clean.txt"
 
     args = [base_folder + '/tools/nmap/nmap.exe', '-T5', '-F', '-Pn', '-iL', subdomains_path, '-oX', output_path]
     print(args)
@@ -91,7 +97,60 @@ def nmap():
 
     return str(nmap_result)
 
+#http://127.0.0.1:5000/programs/screenshotpy?target=www.google.com
+@app.route("/programs/screenshotpy")    
+def screenshotpy():
+
+    webdriver_path = base_folder + "/tools/chrome/chrome-driver.exe"
+    print(webdriver_path)
+
+    chrome_path = base_folder + "/tools/chrome/chrome.exe"
+    print(chrome_path)
+
+    chrome_opcoes = Options()
+    #chrome_opcoes.add_argument("--headless")
+    chrome_opcoes.add_argument("--log-level=3")
+    chrome_opcoes.add_argument("--start-maximized")
+    chrome_opcoes.binary_location = chrome_path
+    chrome_navegador = webdriver.Chrome(webdriver_path, chrome_options=chrome_opcoes)
+
+    target = request.args.get("target")
+
+    nmap_result_path = base_folder + "/static/targets/" + target + "/nmap_clean.txt"
+    print(nmap_result_path)
+
+    try:
+        os.mkdir(base_folder + "/static/targets/" + target + "/prints")
+
+    except Exception as error:
+        pass
+
+    screenshots_folder = base_folder + "/static/targets/" + target + "/prints"
+    print(screenshots_folder)
+
+    with open(nmap_result_path, 'r') as f:
+    	for linha in f.read().splitlines():
+
+            print(linha)
+            
+            try:
+
+                chrome_navegador.get('https://' + linha)
+                #time.sleep(10)
+                #filename = screenshots_folder + '/https_'+ linha.replace('.', '_').replace(':', '') + '.png'
+                #print(filename)
+                chrome_navegador.save_screenshot(screenshots_folder + '/https_'+ linha.replace('.', '_').replace(':', '-') + '.png')
+
+                chrome_navegador.get('http://' + linha)
+                #time.sleep(10)
+                chrome_navegador.save_screenshot(screenshots_folder + '/http_'+ linha.replace('.', '_').replace(':', '-') + '.png')
+                
+            except Exception as erro:
+                print("[+]FALHA", erro)
+
+    chrome_navegador.close()
+            
+    return "success"
+
 if __name__ == '__main__':    
-	app.run(debug=True)      
-
-
+    app.run(debug=True)

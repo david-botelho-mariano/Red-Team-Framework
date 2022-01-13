@@ -9,19 +9,21 @@
   var domain = path_array[2];
 
   $(document).ready(function(){
+    document.getElementById("amass-output").href= "/static/targets/" + domain + "/amass.txt";
+
     Amass();
   });
   
   function Amass() {
 
-    document.getElementById("amass").style.width="50%";
-
+    document.getElementById("amass-progress").style.width="50%";
+    
     $.ajax({
       url: '/programs/amass?target=' + domain,
       type: 'GET',
 
       success: function(data, status) {
-        document.getElementById("amass").style.width="100%";
+        document.getElementById("amass-progress").style.width="100%";
       },
 
       error: function(data, status) {
@@ -40,10 +42,9 @@
 <div>Amass:</div>
 
 <div class="progress">
-  <div id="amass" class="progress-bar" role="progressbar" style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
+  <div id="amass-progress" class="progress-bar" role="progressbar" style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-<a style="display: none;" href="">Amass result</a>
-<a href="">Amass result</a>
+<a id="amass-output" target="_blank" href="">Amass result</a>
 
 <p></p>
 
