@@ -24,6 +24,27 @@
 
       success: function(data, status) {
         document.getElementById("amass-progress").style.width="100%";
+        document.getElementById("amass-output").style.display="block";
+      },
+
+      error: function(data, status) {
+        //console.log(data);
+      }
+    });            
+
+  }
+
+  function Nmap() {
+
+    document.getElementById("nmap-progress").style.width="50%";
+    
+    $.ajax({
+      url: '/programs/nmap?target=' + domain,
+      type: 'GET',
+
+      success: function(data, status) {
+        document.getElementById("amass-progress").style.width="100%";
+        document.getElementById("amass-output").style.display="block";
       },
 
       error: function(data, status) {
@@ -44,23 +65,24 @@
 <div class="progress">
   <div id="amass-progress" class="progress-bar" role="progressbar" style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-<a id="amass-output" target="_blank" href="">Amass result</a>
+<a id="amass-output" target="_blank" href="" style="display: none">Amass result</a>
 
 <p></p>
 
 <div>Nmap:</div>
-
 <div class="progress">
-  <div id="nmap" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+  <div id="nmap-progress" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+<a id="nmap-output" target="_blank" href="" style="display: none">Amass result</a>
 
 <p></p>
 
 <div>Screenshot:</div>
 
 <div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="screenshot-progress" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+<a id="screenshot-output" target="_blank" href="" style="display: none">Amass result</a>
 
 
 

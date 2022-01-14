@@ -152,5 +152,35 @@ def screenshotpy():
             
     return "success"
 
+#http://127.0.0.1:5000/results
+@app.route("/results/")
+def results_folders():
+
+    paths = os.listdir("static/targets")
+
+    html_paths = ""
+
+    for path in paths:
+        html_paths += "<a target='_blank' href='/results/" + path + "'>" + path + "</a><br>"
+        print(path)
+
+    print(html_paths)
+    return render_template('results.html', html_paths=html_paths)
+
+#http://127.0.0.1:5000/results/google.com/
+@app.route("/results/<website_url>/")
+def results_files(website_url):
+
+    paths = os.listdir("static/targets/" + website_url)
+
+    html_paths = ""
+
+    for path in paths:
+        html_paths += "<a target='_blank' href='/static/targets/" + website_url + "/" + path + "'>" + path + "</a><br>"
+        print(path)
+
+    print(html_paths)
+    return render_template('results.html', html_paths=html_paths, website_url=website_url)    
+
 if __name__ == '__main__':    
     app.run(debug=True)
