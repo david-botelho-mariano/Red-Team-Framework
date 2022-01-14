@@ -156,7 +156,7 @@ def screenshotpy():
 @app.route("/results/")
 def results_folders():
 
-    paths = os.listdir("static/targets")
+    paths = os.listdir(base_folder + "/static/targets")
 
     html_paths = ""
 
@@ -171,7 +171,7 @@ def results_folders():
 @app.route("/results/<website_url>/")
 def results_files(website_url):
 
-    paths = os.listdir("static/targets/" + website_url)
+    paths = os.listdir(base_folder + "/static/targets/" + website_url)
 
     html_paths = ""
 
