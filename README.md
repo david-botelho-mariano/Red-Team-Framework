@@ -4,18 +4,18 @@ This is a Grapical user interface (GUI) to automate the use of penetration test 
 
 # Getting started 
 
-1) Instale as bibliotecas do python:
-- Flask
--
+1) Install python libraries:
+- `pip install flask` 
+- `pip install selenium`
 
 2) Start the framework
 - `python app.py`
 
 # Tools implemented
 
-  - [ ] Amass (https://github.com/OWASP/Amass)
-  - [ ] Nmap (https://nmap.org)
-  - [ ] Screenshot websites
+  - [X] Amass (https://github.com/OWASP/Amass)
+  - [X] Nmap (https://nmap.org)
+  - [X] Screenshot websites
 
 # Demonstration
 
