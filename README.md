@@ -1,6 +1,7 @@
 # Red Team Framework
 
-This is a Grapical user interface (GUI) to automate the use of penetration test tools, for example: in reconnaissance mode, with a click you can enumerate domains using Amass, then it will check which hosts are alive and what are the ports open using Nmap, then it will take screenshots of the live websites.
+This is a Grapical user interface (GUI) to automate the use of penetration test tools, for example: in reconnaissance mode, with a click you can enumerate domains using Amass, then it will check which hosts are alive and what are the ports open using Nmap, after it will take screenshots of the live websites.
+
 
 # Tools implemented
 
@@ -11,7 +12,12 @@ This is a Grapical user interface (GUI) to automate the use of penetration test 
 
 # Demonstration
 
+1)
 ![image](https://user-images.githubusercontent.com/48680041/149572643-00bb9955-fe4f-4a27-a809-2971c5b22d98.png)
+
+2)
+![image](https://user-images.githubusercontent.com/48680041/149610607-27d55201-204a-4a3f-9050-87f05354f19c.png)
+
 
 # Getting started 
 
@@ -21,6 +27,7 @@ This is a Grapical user interface (GUI) to automate the use of penetration test 
 
 2) Start the framework
 - `python app.py`
+
 
 # TO-DO
 
