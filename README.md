@@ -2,6 +2,7 @@
 
 This is a Grapical user interface (GUI) to automate the use of penetration test tools, for example: in reconnaissance mode, with a click you can enumerate domains using Amass, then it will check which hosts are alive and what are the ports open using Nmap, then it will take screenshots of the live websites.
 
+
 # Tools implemented
 
   - [X] Amass (https://github.com/OWASP/Amass)
@@ -13,6 +14,9 @@ This is a Grapical user interface (GUI) to automate the use of penetration test 
 
 ![image](https://user-images.githubusercontent.com/48680041/149572643-00bb9955-fe4f-4a27-a809-2971c5b22d98.png)
 
+![image](https://user-images.githubusercontent.com/48680041/149610607-27d55201-204a-4a3f-9050-87f05354f19c.png)
+
+
 # Getting started 
 
 1) Install python libraries:
@@ -21,6 +25,7 @@ This is a Grapical user interface (GUI) to automate the use of penetration test 
 
 2) Start the framework
 - `python app.py`
+
 
 # TO-DO
 
