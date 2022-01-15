@@ -1,7 +1,9 @@
 #webserver
 from flask import Flask, render_template, request
-import subprocess
 import os
+
+#generic tools
+import subprocess
 
 #nmap
 from xml.dom import minidom
@@ -97,8 +99,8 @@ def nmap():
 
     return str(nmap_result)
 
-#http://127.0.0.1:5000/programs/screenshotpy?target=www.google.com
-@app.route("/programs/screenshotpy")    
+#http://127.0.0.1:5000/programs/screenshot?target=www.google.com
+@app.route("/programs/screenshot")    
 def screenshotpy():
 
     webdriver_path = base_folder + "/tools/chrome/chrome-driver.exe"
@@ -113,6 +115,7 @@ def screenshotpy():
     chrome_opcoes.add_argument("--start-maximized")
     chrome_opcoes.binary_location = chrome_path
     chrome_navegador = webdriver.Chrome(webdriver_path, chrome_options=chrome_opcoes)
+    chrome_navegador.set_page_load_timeout(10)
 
     target = request.args.get("target")
 
@@ -181,6 +184,27 @@ def results_files(website_url):
 
     print(html_paths)
     return render_template('results.html', html_paths=html_paths, website_url=website_url)    
+
+#http://127.0.0.1:5000/results/google.com/prints/
+@app.route("/static/targets/<website_url>/prints/")
+def results_images(website_url):
+
+    paths = os.listdir(base_folder + "/static/targets/" + website_url + "/prints")
+    print(paths)
+
+    html_paths = ""
+
+    for path in paths:
+
+        html_paths += '''   <figure class="figure">
+                                <img src='/static/targets/{website_url}/prints/{path}' class="figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">{path}</figcaption>
+                            </figure>
+                      '''.format(website_url=website_url, path=path)
+        print(path)
+
+    print(html_paths)
+    return render_template('results.html', html_paths=html_paths, website_url=website_url)
 
 if __name__ == '__main__':    
     app.run(debug=True)

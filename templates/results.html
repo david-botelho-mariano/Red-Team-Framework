@@ -2,32 +2,6 @@
 
 {% block content %}
 
-<script>
-
-  $(document).ready(function(){
-
-    LoadDirectories();
-  });
-  
-  function LoadDirectories() {
-    
-    $.ajax({
-      url: '/programs/amass?target=' + domain,
-      type: 'GET',
-
-      success: function(data, status) {
-
-      },
-
-      error: function(data, status) {
-        //console.log(data);
-      }
-    });            
-
-  }
-
-</script>
-
 <div>
   {% if website_url %}
     <h1>Results of {{ website_url }}</h1>

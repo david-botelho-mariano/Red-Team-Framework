@@ -10,6 +10,8 @@
 
   $(document).ready(function(){
     document.getElementById("amass-output").href= "/static/targets/" + domain + "/amass.txt";
+    document.getElementById("nmap-output").href= "/static/targets/" + domain + "/nmap_clean.txt";
+    document.getElementById("screenshot-output").href= "/static/targets/" + domain + "/nmap_clean.txt";
 
     Amass();
   });
@@ -25,6 +27,8 @@
       success: function(data, status) {
         document.getElementById("amass-progress").style.width="100%";
         document.getElementById("amass-output").style.display="block";
+
+        Nmap();
       },
 
       error: function(data, status) {
@@ -36,15 +40,17 @@
 
   function Nmap() {
 
-    document.getElementById("nmap-progress").style.width="50%";
+    document.getElementById("nmap-progress").style.width="25%";
     
     $.ajax({
       url: '/programs/nmap?target=' + domain,
       type: 'GET',
 
       success: function(data, status) {
-        document.getElementById("amass-progress").style.width="100%";
-        document.getElementById("amass-output").style.display="block";
+        document.getElementById("nmap-progress").style.width="100%";
+        document.getElementById("nmap-output").style.display="block";
+
+        Screenshot();
       },
 
       error: function(data, status) {
@@ -54,6 +60,26 @@
 
   }
 
+  function Screenshot() {
+
+    document.getElementById("screenshot-progress").style.width="25%";
+
+    $.ajax({
+      url: '/programs/screenshot?target=' + domain,
+      type: 'GET',
+
+      success: function(data, status) {
+        document.getElementById("screenshot-progress").style.width="100%";
+        document.getElementById("screenshot-output").style.display="block";
+      },
+
+      error: function(data, status) {
+        //console.log(data);
+      }
+    });            
+
+  }  
+  
 </script>
 
 <h1>Reconnaissance</h1>
@@ -70,21 +96,19 @@
 <p></p>
 
 <div>Nmap:</div>
+
 <div class="progress">
   <div id="nmap-progress" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-<a id="nmap-output" target="_blank" href="" style="display: none">Amass result</a>
+<a id="nmap-output" target="_blank" href="" style="display: none">Nmap result</a>
 
 <p></p>
 
 <div>Screenshot:</div>
 
 <div class="progress">
-  <div class="screenshot-progress" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+  <div id="screenshot-progress" class="progress-bar" role="progressbar" style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-<a id="screenshot-output" target="_blank" href="" style="display: none">Amass result</a>
-
-
-
+<a id="screenshot-output" target="_blank" href="" style="display: none">Screenshot result</a>
 
 {% endblock %}
