@@ -99,8 +99,8 @@ def nmap():
 
     return str(nmap_result)
 
-#http://127.0.0.1:5000/programs/screenshot?target=www.google.com
-@app.route("/programs/screenshot")    
+#http://127.0.0.1:5000/programs/screenshots?target=www.google.com
+@app.route("/programs/screenshots")    
 def screenshotpy():
 
     webdriver_path = base_folder + "/tools/chrome/chrome-driver.exe"
@@ -110,7 +110,7 @@ def screenshotpy():
     print(chrome_path)
 
     chrome_opcoes = Options()
-    #chrome_opcoes.add_argument("--headless")
+    chrome_opcoes.add_argument("--headless")
     chrome_opcoes.add_argument("--log-level=3")
     chrome_opcoes.add_argument("--start-maximized")
     chrome_opcoes.binary_location = chrome_path
@@ -139,13 +139,9 @@ def screenshotpy():
             try:
 
                 chrome_navegador.get('https://' + linha)
-                #time.sleep(10)
-                #filename = screenshots_folder + '/https_'+ linha.replace('.', '_').replace(':', '') + '.png'
-                #print(filename)
                 chrome_navegador.save_screenshot(screenshots_folder + '/https_'+ linha.replace('.', '_').replace(':', '-') + '.png')
 
                 chrome_navegador.get('http://' + linha)
-                #time.sleep(10)
                 chrome_navegador.save_screenshot(screenshots_folder + '/http_'+ linha.replace('.', '_').replace(':', '-') + '.png')
                 
             except Exception as erro:
@@ -192,7 +188,6 @@ def results_files(website_url):
     return render_template('results.html', html_paths=html_paths, website_url=website_url)    
 
 #http://127.0.0.1:5000/results/google.com/prints/
-#@app.route("/static/targets/<website_url>/prints/")
 @app.route("/results/<website_url>/prints/")
 def results_images(website_url):
 

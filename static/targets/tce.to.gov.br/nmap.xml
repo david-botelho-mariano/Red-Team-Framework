@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Users/David B M/Desktop/Desk/github/teste-clone/Red-Team-Framework/tools/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat Jan 15 03:02:20 2022 as: &quot;C:\\Users\\David B M\\Desktop\\Desk\\github\\teste-clone\\Red-Team-Framework/tools/nmap/nmap.exe&quot; -T5 -F -Pn -iL &quot;C:\\Users\\David B M\\Desktop\\Desk\\github\\teste-clone\\Red-Team-Framework/static/targets/tce.to.gov.br/amass.txt&quot; -oX &quot;C:\\Users\\David B M\\Desktop\\Desk\\github\\teste-clone\\Red-Team-Framework/static/targets/tce.to.gov.br/nmap.xml&quot; -->
+<nmaprun scanner="nmap" args="&quot;C:\\Users\\David B M\\Desktop\\Desk\\github\\teste-clone\\Red-Team-Framework/tools/nmap/nmap.exe&quot; -T5 -F -Pn -iL &quot;C:\\Users\\David B M\\Desktop\\Desk\\github\\teste-clone\\Red-Team-Framework/static/targets/tce.to.gov.br/amass.txt&quot; -oX &quot;C:\\Users\\David B M\\Desktop\\Desk\\github\\teste-clone\\Red-Team-Framework/static/targets/tce.to.gov.br/nmap.xml&quot;" start="1642226540" startstr="Sat Jan 15 03:02:20 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.208" addrtype="ipv4"/>
+<hostnames>
+<hostname name="econtas.tce.to.gov.br" type="user"/>
+<hostname name="athenas.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="wifi.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.204" addrtype="ipv4"/>
+<hostnames>
+<hostname name="transparencia.tce.to.gov.br" type="user"/>
+<hostname name="app.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.205" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mail.tce.to.gov.br" type="user"/>
+<hostname name="tdinfoserv112.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.213" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nuvem.tce.to.gov.br" type="user"/>
+<hostname name="213.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.203" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ead.tce.to.gov.br" type="user"/>
+<hostname name="ead.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="97">
+<extrareasons reason="no-response" count="97" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79,81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,444-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="45957" rttvar="14067" to="102225"/>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.201" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sei.tce.to.gov.br" type="user"/>
+<hostname name="sei.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.209" addrtype="ipv4"/>
+<hostnames>
+<hostname name="api.tce.to.gov.br" type="user"/>
+<hostname name="ws.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.207" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ws.tce.to.gov.br" type="user"/>
+<hostname name="207.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="98">
+<extrareasons reason="no-response" count="98" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79,81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,444-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="54"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="210779" rttvar="223258" to="300000"/>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.200" addrtype="ipv4"/>
+<hostnames>
+<hostname name="tce.to.gov.br" type="user"/>
+<hostname name="www.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.214" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gitlab.tce.to.gov.br" type="user"/>
+<hostname name="214.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.210" addrtype="ipv4"/>
+<hostnames>
+<hostname name="rocket.tce.to.gov.br" type="user"/>
+<hostname name="210.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.202" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pleno.tce.to.gov.br" type="user"/>
+<hostname name="pleno.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="97">
+<extrareasons reason="no-response" count="97" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79,81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8008-8009,8080-8081,8443,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="54"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8000"><state state="closed" reason="reset" reason_ttl="54"/><service name="http-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8888"><state state="closed" reason="reset" reason_ttl="54"/><service name="sun-answerbook" method="table" conf="3"/></port>
+</ports>
+<times srtt="178540" rttvar="216398" to="300000"/>
+</host>
+<host starttime="1642226546" endtime="1642226560"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.211" addrtype="ipv4"/>
+<hostnames>
+<hostname name="assinador01.tce.to.gov.br" type="user"/>
+<hostname name="211.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.206" addrtype="ipv4"/>
+<hostnames>
+<hostname name="athenas.tce.to.gov.br" type="user"/>
+<hostname name="206.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.124.38.222" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cod7e1f2102186ac32c.ws.tce.to.gov.br" type="user"/>
+<hostname name="222.38.124.179.static.sp2.alog.com.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="99">
+<extrareasons reason="no-response" count="97" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79,81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,444-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,9100,9999-10000,32768,49152-49157"/>
+<extrareasons reason="port-unreach" count="2" proto="tcp" ports="443,8888"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="169187" rttvar="217380" to="300000"/>
+</host>
+<host starttime="1642226546" endtime="1642226561"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.212" addrtype="ipv4"/>
+<hostnames>
+<hostname name="relatorios.tce-to.tce.to.gov.br" type="user"/>
+<hostname name="212.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="99">
+<extrareasons reason="no-response" count="99" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="54"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="79251" rttvar="45716" to="262115"/>
+</host>
+<host starttime="1642226561" endtime="1642226587"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="intranet.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226561" endtime="1642226588"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.204" addrtype="ipv4"/>
+<hostnames>
+<hostname name="iegm.tce.to.gov.br" type="user"/>
+<hostname name="app.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226561" endtime="1642226588"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.208" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ouvidoria.tce.to.gov.br" type="user"/>
+<hostname name="athenas.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226561" endtime="1642226588"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.205" addrtype="ipv4"/>
+<hostnames>
+<hostname name="tdinfoserv112.tce.to.gov.br" type="user"/>
+<hostname name="tdinfoserv112.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226561" endtime="1642226588"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.200" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.tce.to.gov.br" type="user"/>
+<hostname name="www.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226588" endtime="1642226610"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="seides.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226588" endtime="1642226609"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.204" addrtype="ipv4"/>
+<hostnames>
+<hostname name="portaldocidadao.tce.to.gov.br" type="user"/>
+<hostname name="app.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226588" endtime="1642226609"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.208" addrtype="ipv4"/>
+<hostnames>
+<hostname name="econtas2.tce.to.gov.br" type="user"/>
+<hostname name="athenas.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226588" endtime="1642226610"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.200" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ns1.tce.to.gov.br" type="user"/>
+<hostname name="www.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226610" endtime="1642226622"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="api2.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226610" endtime="1642226622"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.204" addrtype="ipv4"/>
+<hostnames>
+<hostname name="app.tce.to.gov.br" type="user"/>
+<hostname name="app.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226622" endtime="1642226633"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="web.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226622" endtime="1642226633"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.204" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cdn.tce.to.gov.br" type="user"/>
+<hostname name="app.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226633" endtime="1642226644"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="devapi.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226633" endtime="1642226645"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.204" addrtype="ipv4"/>
+<hostnames>
+<hostname name="appext.tce.to.gov.br" type="user"/>
+<hostname name="app.tce.to.gov.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226645" endtime="1642226651"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dev2.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226651" endtime="1642226657"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="documentoffice.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<host starttime="1642226657" endtime="1642226663"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="179.96.4.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="onlyoffice.tce.to.gov.br" type="user"/>
+<hostname name="216.e.spo.pop.g8.net.br" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-response" count="100" proto="tcp" ports="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+</ports>
+</host>
+<runstats><finished time="1642226663" timestr="Sat Jan 15 03:04:23 2022" summary="Nmap done at Sat Jan 15 03:04:23 2022; 35 IP addresses (35 hosts up) scanned in 123.93 seconds" elapsed="123.93" exit="success"/><hosts up="35" down="0" total="35"/>
+</runstats>
+</nmaprun>

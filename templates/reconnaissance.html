@@ -11,7 +11,7 @@
   $(document).ready(function(){
     document.getElementById("amass-output").href= "/static/targets/" + domain + "/amass.txt";
     document.getElementById("nmap-output").href= "/static/targets/" + domain + "/nmap_clean.txt";
-    document.getElementById("screenshot-output").href= "/results/" + domain + "/prints/";
+    document.getElementById("screenshots-output").href= "/results/" + domain + "/prints/";
 
     Amass();
   });
@@ -50,7 +50,7 @@
         document.getElementById("nmap-progress").style.width="100%";
         document.getElementById("nmap-output").style.display="block";
 
-        Screenshot();
+        Screenshots();
       },
 
       error: function(data, status) {
@@ -60,17 +60,17 @@
 
   }
 
-  function Screenshot() {
+  function Screenshots() {
 
-    document.getElementById("screenshot-progress").style.width="25%";
+    document.getElementById("screenshots-progress").style.width="25%";
 
     $.ajax({
-      url: '/programs/screenshot?target=' + domain,
+      url: '/programs/screenshots?target=' + domain,
       type: 'GET',
 
       success: function(data, status) {
-        document.getElementById("screenshot-progress").style.width="100%";
-        document.getElementById("screenshot-output").style.display="block";
+        document.getElementById("screenshots-progress").style.width="100%";
+        document.getElementById("screenshots-output").style.display="block";
       },
 
       error: function(data, status) {
@@ -104,11 +104,11 @@
 
 <p></p>
 
-<div>Screenshot:</div>
+<div>Screenshots:</div>
 
 <div class="progress">
-  <div id="screenshot-progress" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+  <div id="screenshots-progress" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-<a id="screenshot-output" target="_blank" href="" style="display: none">Screenshot result</a>
+<a id="screenshots-output" target="_blank" href="" style="display: none">Screenshots result</a>
 
 {% endblock %}

@@ -81,3 +81,9 @@
 [1119/010019.314:ERROR:exception_snapshot_win.cc(98)] thread ID 22112 not found in process
 [1119/021709.989:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [1119/021709.989:ERROR:exception_snapshot_win.cc(98)] thread ID 1576 not found in process
+[0115/024242.867:ERROR:ssl_client_socket_impl.cc(1001)] handshake failed; returned -1, SSL error code 1, net_error -107
+[0115/024253.970:ERROR:ssl_client_socket_impl.cc(1001)] handshake failed; returned -1, SSL error code 1, net_error -107
+[0115/024312.715:ERROR:ssl_client_socket_impl.cc(1001)] handshake failed; returned -1, SSL error code 1, net_error -107
+[0115/030432.619:ERROR:ssl_client_socket_impl.cc(1001)] handshake failed; returned -1, SSL error code 1, net_error -107
+[0115/030443.526:ERROR:ssl_client_socket_impl.cc(1001)] handshake failed; returned -1, SSL error code 1, net_error -107
+[0115/030508.332:ERROR:ssl_client_socket_impl.cc(1001)] handshake failed; returned -1, SSL error code 1, net_error -107
