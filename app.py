@@ -179,14 +179,21 @@ def results_files(website_url):
     html_paths = ""
 
     for path in paths:
-        html_paths += "<a target='_blank' href='/static/targets/" + website_url + "/" + path + "'>" + path + "</a><br>"
+
+        if "prints" in path:
+            html_paths += "<a target='_blank' href='/results/" + website_url + "/prints'>" + path + "</a><br>"
+
+        else:
+            html_paths += "<a target='_blank' href='/static/targets/" + website_url + "/" + path + "'>" + path + "</a><br>"
+
         print(path)
 
     print(html_paths)
     return render_template('results.html', html_paths=html_paths, website_url=website_url)    
 
 #http://127.0.0.1:5000/results/google.com/prints/
-@app.route("/static/targets/<website_url>/prints/")
+#@app.route("/static/targets/<website_url>/prints/")
+@app.route("/results/<website_url>/prints/")
 def results_images(website_url):
 
     paths = os.listdir(base_folder + "/static/targets/" + website_url + "/prints")
@@ -197,7 +204,7 @@ def results_images(website_url):
     for path in paths:
 
         html_paths += '''   <figure class="figure">
-                                <img src='/static/targets/{website_url}/prints/{path}' class="figure-img img-fluid rounded">
+                                <img src="/static/targets/{website_url}/prints/{path}" class="figure-img img-fluid rounded">
                                 <figcaption class="figure-caption">{path}</figcaption>
                             </figure>
                       '''.format(website_url=website_url, path=path)
