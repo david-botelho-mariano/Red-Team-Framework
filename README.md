@@ -12,9 +12,9 @@ This is a Grapical user interface (GUI) to automate the use of penetration test 
 
 # Demonstration
 
-1) ![image](https://user-images.githubusercontent.com/48680041/149572643-00bb9955-fe4f-4a27-a809-2971c5b22d98.png)
+- ![image](https://user-images.githubusercontent.com/48680041/149572643-00bb9955-fe4f-4a27-a809-2971c5b22d98.png)
 
-2) ![image](https://user-images.githubusercontent.com/48680041/149610607-27d55201-204a-4a3f-9050-87f05354f19c.png)
+- ![image](https://user-images.githubusercontent.com/48680041/149610607-27d55201-204a-4a3f-9050-87f05354f19c.png)
 
 
 # Getting started 
